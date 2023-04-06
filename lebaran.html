@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lebaran</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        Swal.fire({
+          showDenyButton: true,
+          denyButtonColor: "#D6E4E5",
+          confirmButtonText: "OK",
+          confirmButtonColor: "#0366D0",
+          title: "Arkatama says",
+          text: "Makin hari makin dekat, kukira kamu?",
+        }).then((result) =>
+          Swal.fire({
+            title: "Arkamata says",
+            text: "Ternyata hari raya idul fitri 1444 Hijriyah",
+            confirmButtonColor: "#0366D0",
+          }).then((_) =>
+            Swal.fire({
+              title: "Arkatama says",
+              text: "Bila dosa dan kesalahan di dalam sebuah variabel array\n\ndendam, dengki, iri, benci, caci, maki, amarah, bohong,..",
+              confirmButtonColor: "#0366D0",
+            }).then((_) =>
+              Swal.fire({
+                title: "Arkatama says",
+                text: "Bila kesalahan itu sebuah array, maka dihari yang fitrah ini mari kita sama-sama mengosongkan variabel tersebut",
+                confirmButtonColor: "#0366D0",
+              }).then((_) =>
+                Swal.fire({
+                  title: "Arkatama says",
+                  text: "Selamat hari raya idul fitri\nMohon maaf atas segala bugs, baik itu error maupun warning",
+                  confirmButtonColor: "#0366D0",
+                })
+              )
+            )
+          )
+        );
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
